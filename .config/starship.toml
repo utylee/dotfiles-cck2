@@ -29,10 +29,11 @@ add_newline = false
 #[CCY2](bold fg:#ab4882)\
 #[CCY2](bold fg:#c24a8e)\
 #[CCK2](bold fg:#3c71bd)\
+# [CCK2](bold fg:#3c76c9)\
 
 format = """
 $python\
-[CCK2](bold fg:#3c76c9)\
+[CCK2](bold fg:#b543a0)\
 $username\
 $directory\
 $git_branch$git_commit\
@@ -51,7 +52,8 @@ $character\
 #success_symbol = "[❯](bold #ab4882)"
 #success_symbol = "[❯](bold #ab437f)"
 # success_symbol = "[❯](bold #217a48)"
-success_symbol = "[❯](bold #3c76c9)"
+# success_symbol = "[❯](bold #3c76c9)"
+success_symbol = "[❯](bold #b543a0)"
 #error_symbol = "[✗](fg:1)"
 error_symbol = "[❯](fg:1)"
 # error_symbol = "[❯](fg:#7c33bd)"
