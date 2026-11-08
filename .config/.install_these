@@ -69,6 +69,8 @@ sh -c "$(curl -fsSL https://starship.rs/install.sh)"
 	* 이미 fish 상태라면 아래아래처럼 합니다
 	sh -c (curl -fsSL https://starship.rs/install.sh)
 
+최신? curl -sS https://starship.rs/install.sh | sh
+
 * pyenv build dependencies 혹은 기본 설치해야할 것들
 sudo apt-get update; sudo apt-get install make build-essential \
 libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev \

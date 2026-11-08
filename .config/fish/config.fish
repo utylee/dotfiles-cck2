@@ -6,7 +6,7 @@ if status is-interactive
 	#echo -ne '\eP\e]12;#873a75\a'   # m5
 	#echo -ne '\eP\e]12;#3a8783\a'   # m5
 	# echo -ne '\eP\e]12;#994886\a'   # m5
-	echo -ne '\eP\e]12;#32995f\a'   # m5
+	echo -ne '\eP\e]12;#3c76c9\a'   # m5
 	#7a2f5buu
 	# echo -ne '\eP\e]12;#679e8a\a'   # HC1
 	# echo -ne '\eP\e]12;#53cfcc\a'   # HC1
@@ -101,7 +101,7 @@ set -x LC_ALL ko_KR.UTF-8
 # set -l NODEHOME /usr/local/node-v22.18.0-linux-armv7l
 # set -l NODEHOME /usr/local/node-v22.18.0-linux-x64
 # set -l NODEHOME /usr/local/node-v22.22.0-linux-x64
-set -l NODEHOME /usr/local/node-v24.21.0-linux-x64 
+set -l NODEHOME /usr/local/node-v24.22.2-linux-x64
 # set -x PATH $CLANGHOME/bin $PATH
 set -x PATH $HOME/.go/bin /usr/local/go1.17.3/bin $NODEHOME/bin $PATH
 
@@ -142,4 +142,7 @@ set -gx WORKON_HOME $HOME/.virtualenvs
 # bun
 set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH
-pyenv init - fish | source
+if status is-interactive; and command -q pyenv
+    pyenv init - fish | source
+end
+# pyenv init - fish | source
